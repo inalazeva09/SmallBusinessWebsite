@@ -1,0 +1,13 @@
+@font-face {
+    font-family: MyFont; /* chosen name font*/ 
+    src:url(Straw\ Milky.otf); /*link of url of font file */ 
+  }
+
+.title {
+    color: black; 
+    font-family: MyFont;
+}
+
+p {
+font-family: MyFont;
+}
