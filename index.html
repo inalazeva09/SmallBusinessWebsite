@@ -1,114 +1,152 @@
-<!--format(Ctrl+Shift+I)-->
+<!--Name: Ina Lazeva
+    Date: May 1, 2025
+    Assignment: Small Business Bootstrap Website Project
+    Extra: an addition of a section with reviews 
+    --> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Vogue Vista</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- bootstrap CSS -->
+  <!-- bootstrap CSS --> 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-<!-- business name (starter screen) -->
+<!-- business name (starter image box screen) -->
 <div class="container-fluid text-white text-center p-5" style="background-image: url('https://static.vecteezy.com/system/resources/thumbnails/037/236/239/small_2x/ai-generated-fashion-store-advertisment-background-with-copy-space-free-photo.jpg'); background-size: cover; background-position: center;">
-  <h1 class="display-3">Vogue Vista</h1>
-  <p class="lead">Designer Fashion with Vision</p>
+  <h1 class="display-3" style="color: #332d2b;">Vogue Vista</h1> <!-- display of title -->
+  <p class="lead" style="color: #3f38369a;">Designer Fashion with Vision</p>  <!-- display of subtitle  -->
 </div>
 
 <!-- navbar (from W3Schools) -->
-<nav class="navbar navbar-expand-sm bg-light navbar-light">
+<nav class="navbar navbar-expand-sm" style="background-color: #eedbd79a;"> 
+                                      <!-- background color set to light pink -->
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Menu</a>
+    <a class="navbar-brand" href="#" style="color: #665750;">Menu</a>
+                                      <!-- text color for menu -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#collections">Collections</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about" style="color: #665750;">About</a>
+                                             <!-- text color for about -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#collections" style="color: #665750;">Collections</a>
+                                                  <!-- text color for collections -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact" style="color: #665750;">Contact</a>
+                                              <!-- text color for contact -->
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 
+
 <!-- about section -->
-<div class="container mt-5" id="about"> <!--medium devices - screen width equal to or greater than 768px-->
+<div class="container mt-5" id="about" style="color: #73635c;"> <!--medium devices - screen width equal to or greater than 768px-->
   <h2>About Us</h2>
+  <!-- about us info paragraph -->
   <p>Welcome to Vogue Vista. Here we are a great destination for high-end, designer fashion. We bring style, creativity, and individuality together to help you express yourself through what you wear.
     Each year, we proudly present three exclusive collections: Spring, Couture, and Streetwear all designed with your fashion needs in mind. Our collections feature stunning work by renowned fashion designers, who each bring their unique vision to life through fabric, color, and form.
     From fresh seasonal looks to bold urban wear and luxurious evening couture, Vogue Vista is here to help you look your best all year round, making fashion accessible and elegant.</p>
 </div>
 
-<!-- collection selction with cards -->
-<div class="container mt-5" id="collections">
+<!-- collection selction with cards grids showing 3 bootstrap cards-->
+<div class="container mt-5" id="collections" style="color: #73635c;">
   <h2>Our Collections</h2>
   <div class="row">
 
 <!--shows products and use of bootstrap grid + cards-->
 
-    <!-- card #1 -->
+    <!-- card #1 ( SPRING COLLECTION)-->
     <div class="col-sm-4 mt-3">
+       <div class="card">
+          <img
+             class="card-img-top"
+             src="https://images.squarespace-cdn.com/content/v1/55e5d510e4b0b2d1e68ad3c3/1505324583701-2ENN4N61LNRTNYI7R137/Rongrong+DeVoe+fashion+sketches-Self+Portrait+SS18+New+York+Fashion+Week.JPG"
+            alt="Spring Collection">
+          <div class="card-body"> <!-- adds space between title and picture-->
+            <h4 class="card-title" style="color: #73635c;">Spring</h4>
+            <p class="card-text" style="color: #73635c;">
+               Bright, floral, and light fabrics to welcome the new season with style.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    <!-- card #2 (COUTURE COLLECTIONS)-->
+    <div class="col-sm-4 mt-3" >
       <div class="card">
-        
-        <div class="card-body">
-          <h4 class="card-title">Spring</h4>
-          <p class="card-text">Fresh looks for the new season.</p>
+        <img
+             class="card-img-top"
+             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9ErkHrxDjmydI00Qme9zZdj4Yem92TnOjFA&s"
+            alt="Couture Collection">
+        <div class="card-body"> <!-- adds space between title and picture-->
+          <h4 class="card-title" style="color: #73635c;" >Couture</h4>
+          <p class="card-text" style="color: #73635c;">Luxury designs tailored to you.</p>
         </div>
       </div>
     </div>
 
-    <!-- card #2 -->
-    <div class="col-sm-4 mt-3">
+    <!-- card #3 (STREETWEAR COLLECTION)-->
+    <div class="col-sm-4 mt-3" >
       <div class="card">
-        
-        <div class="card-body">
-          <h4 class="card-title">Couture</h4>
-          <p class="card-text">Luxury designs tailored to you.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- card #3 -->
-    <div class="col-sm-4 mt-3">
-      <div class="card">
-         
-        <div class="card-body">
-          <h4 class="card-title">Streetwear</h4>
-          <p class="card-text">Bold styles for everyday fashion.</p>
+        <img
+        class="card-img-top"
+        src="https://www.shutterstock.com/image-vector/vector-sketch-fashion-women-260nw-124156618.jpg"
+        alt="Streetwear Collection">
+        <div class="card-body"> <!-- adds space between title and picture-->
+          <h4 class="card-title" style="color: #73635c;">Streetwear</h4>
+          <p class="card-text" style="color: #73635c;">Bold styles for everyday fashion.</p>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- contact form (from W3Schools Form Tutorial)-->
-<div class="container mt-5 mb-5" id="contact">
+<!--EXTRA: an addition of a section with reviews--> 
+<div class = "container mt-5 mb-5" style=" color: #73635c;">
+  <h2>Reviews</h2>
+  <p>"Love the new spring looks!" - Zarina </p>
+  <p> "Great quality clothes." - Luca</p>
+  <p> "I always shop here for events." - Aisha </p>
+</div>
+
+<!-- contact form in bootstrap (from W3Schools Form Tutorial)-->
+<div class="container mt-5 mb-5" id="contact" style="color: #73635c;">
   <h2>Contact Us</h2>
   <form>
     <div class="mb-3 mt-3">
-      <label for="name">Name:</label>
+      <label for="name">name:</label>
       <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
     </div>
     <div class="mb-3">
-      <label for="email">Email:</label>
+      <label for="email">email:</label>
       <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
     </div>
     <div class="mb-3">
-      <label for="message">Message:</label>
+      <label for="message">message:</label>
       <textarea class="form-control" id="message" rows="4" placeholder="Type your message here" required></textarea>
     </div>
-    <button type="submit" class="btn btn-primary">Send</button>
+    <!-- submit button -->
+    <button type="submit" class="btn" style="background-color: transparent; color: #73635c; border: 2px solid #73635c;">Submit</button>
   </form>
 </div>
 
-<!-- FOOTER  -->
-<div class="container-fluid bg-light text-center p-3">
-  <p>&copy; 2025 Vogue Vista</p>
+<!-- an addition of footer -->
+<div class="container-fluid bg-light text-center p-3" style="color: #73635c;">
+  <p>&copy; 2025 Vogue Vista </p>
+  <p> Ina Lazeva</p>
 </div>
 
-<!-- Bootstrap JS Bundle (from W3Schools) -->
+<!-- bootstrap bundlejs (from W3Schools) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
